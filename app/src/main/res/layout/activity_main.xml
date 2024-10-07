@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--sudah saya upayakan tetapi tetap saja berantakan. Meski kode tidak error, setiap saya menambah elemen, elemen yang telah ada berantakan atau hilang-->
+
+    <ImageView
+        android:id="@+id/ig_logo"
+        android:layout_width="100.8dp"
+        android:layout_height="36dp"
+        android:background="@drawable/instagram_logo"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_heart"
+        app:layout_constraintEnd_toStartOf="@id/share"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/user_profil"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/user_story"
+        app:layout_constraintTop_toBottomOf="@id/ig_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/cerita_anda"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Cerita Anda"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/user_profil"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/asset_story"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/asset_story"
+        app:layout_constraintStart_toEndOf="@+id/user_profil"
+        app:layout_constraintTop_toBottomOf="@+id/ig_logo"/>
+
+    <TextView
+        android:id="@+id/cerita_asset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Assets"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/asset_story"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/liga_story"
+        android:layout_width="80dp"
+        android:layout_height="83dp"
+        android:background="@drawable/liga_trpl_pp"
+        app:layout_constraintStart_toEndOf="@+id/asset_story"
+        app:layout_constraintTop_toBottomOf="@+id/ig_logo"/>
+
+    <TextView
+        android:id="@+id/cerita_liga"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Liga"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/liga_story"
+        app:layout_constraintStart_toEndOf="@+id/cerita_asset"/>
+
+    <ImageView
+        android:id="@+id/asset_story2"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/asset_story"
+        app:layout_constraintStart_toEndOf="@+id/liga_story"
+        app:layout_constraintTop_toBottomOf="@+id/ig_logo"/>
+
+    <ImageView
+        android:id="@+id/liga_story2"
+        android:layout_width="80dp"
+        android:layout_height="83dp"
+        android:background="@drawable/liga_trpl_pp"
+        app:layout_constraintStart_toEndOf="@+id/asset_story2"
+        app:layout_constraintTop_toBottomOf="@+id/ig_logo"/>
+
+    <ImageView
+        android:id="@+id/pp_fufufafa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/fufufafa_pp"
+        app:layout_constraintTop_toBottomOf="@id/cerita_anda"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/fufufafa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fufufafa"
+        app:layout_constraintStart_toEndOf="@+id/pp_fufufafa"
+        app:layout_constraintTop_toBottomOf="@+id/cerita_anda"
+        />
+
+    <TextView
+        android:id="@+id/putramulyono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="putra mulyono"
+        app:layout_constraintTop_toBottomOf="@+id/fufufafa"
+        app:layout_constraintStart_toEndOf="@+id/pp_fufufafa"
+        />
+
+    <ImageView
+        android:id="@+id/ttk3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_titik_tiga"
+        app:layout_constraintStart_toEndOf="@+id/putramulyono"
+        app:layout_constraintTop_toBottomOf="@+id/share"
+        />
+
+    <ImageView
+        android:id="@+id/post_fufufafa"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/post_fufufafa"
+        app:layout_constraintTop_toBottomOf="@+id/pp_fufufafa"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/heart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_heart"
+        app:layout_constraintTop_toBottomOf="@+id/post_fufufafa"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
